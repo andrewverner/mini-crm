@@ -35,6 +35,8 @@ final readonly class UserService implements UserServiceInterface
             }
         } catch (Throwable) {
             $transaction->rollBack();
+
+            return false;
         }
 
         $transaction->commit();
