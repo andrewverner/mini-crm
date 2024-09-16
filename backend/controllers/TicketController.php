@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace backend\controllers;
 
+use backend\controllers\actions\ticket\DownloadAction;
 use backend\controllers\actions\ticket\IndexAction;
 use backend\controllers\actions\ticket\UpdateAction;
 use backend\controllers\actions\ticket\ViewAction;
@@ -37,6 +38,7 @@ final class TicketController extends Controller
             'index' => IndexAction::class,
             'view' => ViewAction::class,
             'update' => UpdateAction::class,
+            'download' => DownloadAction::class,
         ];
     }
 }

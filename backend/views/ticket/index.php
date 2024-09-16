@@ -18,6 +18,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <h1><?= Html::encode($this->title) ?></h1>
 
+    <p><?= Html::a(text: 'Download CSV', url: ['/ticket/download'], options: ['class' => 'btn btn-primary', 'target' => '_blank']) ?></p>
+
     <?php Pjax::begin(); ?>
 
     <?= GridView::widget([

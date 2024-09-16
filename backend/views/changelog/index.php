@@ -1,20 +1,17 @@
 <?php
 
 use backend\components\columns\TicketChangelogDataColumn;
-use backend\models\TicketChangelog;
 use yii\helpers\Html;
-use yii\helpers\Url;
-use yii\grid\ActionColumn;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 
 /** @var yii\web\View $this */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
-$this->title = 'Users';
+$this->title = 'Changelog';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="user-index">
+<div class="changelog-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
